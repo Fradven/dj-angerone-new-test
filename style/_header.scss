@@ -1,0 +1,306 @@
+header {
+    background-image: url(../img/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    h1 {
+        font-family: $poppins;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 25pt;
+        padding-bottom: 25pt;
+    
+    }
+    h2 {
+        font-family: $poppins;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 10pt;
+    }
+}
+
+.topNav {
+background-color: #28282800;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    .navItems {
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+    }
+    ul li a{
+        color: white;
+        font-family: $poppins;
+        font-size: 10pt;
+        margin: 1em;
+        text-decoration: none;
+    }
+    ul li a:hover{       
+        text-shadow: 0px 0px 20px white;
+        text-decoration: underline;
+            text-underline-offset: 1em;
+            text-decoration-thickness: 5px;
+            text-decoration-color: white;
+            transform:scale(200%);
+            transition: ease-in-out;
+            transition-duration: 500ms;
+    }
+}
+.menuToggle {
+    display: none;
+   
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+    z-index: 5;
+}
+.logo:hover{
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.555));
+}
+.headerSocial, .settings {
+    height: 1.5em;
+    width: auto;
+    fill: rgba(255, 255, 255, 0.767);
+}
+.headerSocial:hover{
+    transform: scale(1.1);
+transition: ease-in-out;
+transition-duration: 500ms;
+filter:drop-shadow(5px 5px 30px white);
+}
+.settings {
+display: none; 
+}
+.checkbox{
+    display: none;
+}
+.mainTitleContainer {
+    height: 200px;
+   
+    display: flex;
+    .mainTitle {
+        margin: auto;
+        text-align: center;
+    }
+
+    .yellowDot {
+        color: yellow;
+        margin: 5pt;
+        font-size: 15pt;
+    }
+    a {
+        font-family: $poppins;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10pt;
+    text-decoration: none;
+    }
+    a:first-Child {
+        font-weight: 600;
+    }
+}
+.musicClock {
+#music-title {
+    width: 100%;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 6em;
+    line-height: 1;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+    overflow: visible;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+    .topNav {
+        min-height: 3rem;
+        background-color: $Darkgrey;
+        justify-content: flex-start;
+        .navItems {
+            background-color: $Darkgrey;
+            display:none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left:0;
+            width: 100%;
+            height: 100vh;
+            z-index: 2;
+            ul{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 4em;
+                li a{
+                    font-size: 2em;
+                    line-height: 2em;
+                }
+            }
+            .socialNav {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+    
+    .menuToggle {
+        display: block;
+        position: absolute;
+        height: 3rem;
+        width: auto;
+        top: 8px;
+        left: 5px;
+        filter: invert(1);
+        z-index: 5
+    }
+    .checkbox {
+        display:block;
+        z-index: 6;
+        height: 4em;
+        width: 4em;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+    .settings {
+        display: block;
+        position: absolute;
+top: 15px;
+right: 15px;
+height: 2em;
+width: auto;
+filter: invert(1);
+    }
+
+.musicClock {
+    #music-title {
+        width: 100%;
+        font-family: $poppins;
+        font-weight: 700;
+        font-size: 4em;
+        line-height: 1;
+        fill: transparent;
+        stroke: #ffffff;
+        stroke-width: 1px;
+        overflow: visible;
+      }
+      .songTitle h5 {
+        position: relative;
+        bottom: -25px;
+        font-family: $poppins;
+        font-size: 1em;
+        font-weight: 600;
+        color: white;
+    }
+    }
+}
+
+
+@media  screen and (max-width: 320px) {
+    .musicClock {
+        #music-title {
+            width: 100%;
+            font-family: $poppins;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 1;
+            fill: transparent;
+            stroke: #ffffff;
+            stroke-width: 1px;
+            overflow: visible;
+          }
+          .songTitle h5 {
+            position: relative;
+            bottom: -25px;
+            font-family: $poppins;
+            font-size: 1em;
+            font-weight: 600;
+            color: white;
+        }
+        }
+    
+    
+    .topNav {
+        background-color: $Darkgrey;
+        justify-content: flex-start;
+        .navItems {
+            display: none;
+        }
+    }
+    .logo {
+        margin-left: 20%;
+        max-width: 75%;
+        height: auto;
+    }
+    
+    .menuToggle {
+        display: block;
+        position: absolute;
+        height: 3rem;
+        width: auto;
+        top: 8px;
+        left: 5px;
+        filter: invert(1);
+    }
+    .settings {
+        display: block;
+        position: absolute;
+top: 15px;
+right: 15px;
+height: 2em;
+width: auto;
+filter: invert(1);
+    }
+}
+
+#mainHeader {
+    background-image: url(../img/homapage-banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.musicClock {
+    width: 85%;
+    margin: auto;
+    position: relative;
+    bottom: -50px;
+    overflow: visible;
+
+}
+
+
+#music-title {
+    width: 100%;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+    overflow: visible;
+  }
+
+  .songTitle h5 {
+      position: relative;
+      bottom: -25px;
+      font-family: $poppins;
+      font-size: 3em;
+      font-weight: 600;
+      color: white;
+  }
+

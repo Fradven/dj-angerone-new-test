@@ -1,0 +1,82 @@
+#clockdiv{
+    font-family: $poppins;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    text-align: center;
+    font-size: 3.5em;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .clock {
+    display: flex;
+    flex-direction: row;
+  }
+  #clockdiv > div{
+      padding: 0.2em;
+    /*display: inline-block;*/
+  }
+  
+  #clockdiv div > span{
+      font-weight: 400;
+    /*display: inline-block;*/
+    padding: 0.2em;
+  }
+  
+  .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  #nextEvent {
+    width: 2em;
+    height:100%;
+    
+    h3 {
+      font-weight: 400;
+      font-size: 0.6em;
+    }
+    p {
+      font-size: 0.1em;
+    }
+  }
+  #buyButton {
+    font-size: 0.2em;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin-left: 0.5em;
+    background-color: $Purple;
+    border-radius: 10px;
+    line-break: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    #clockdiv{
+      flex-direction: column;
+      align-items: center;
+    }
+    #nextEvent {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    #clockdiv{
+      flex-direction: column;
+
+     }
+      #sechide {
+        display: none;
+        
+      }
+      #nextEvent {
+        width: 100%;
+      }
+  }
+
+

@@ -1,0 +1,46 @@
+.suscribe {
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../img/homepage-footer-background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        font-family: $poppins;
+        padding: 1em;
+        width: 100%;
+    }
+    .mailField {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 5%;
+        width: 100%;
+        input {
+            height: 2em;
+            width: 100%;
+            border-radius: 5px;
+        }
+        #suscribeButton {
+            align-self: center;
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width:312px) {
+  .suscribe { 
+    .mailField {
+        flex-direction: column;
+        gap: 1em;
+        input {
+            width: 80%;
+        }
+    }
+}
+}

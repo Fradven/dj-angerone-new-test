@@ -1,0 +1,69 @@
+@media screen and (max-width: 320px) {
+  footer {
+    .mainlogo {
+      padding-top: 10vh;
+    }
+
+    .abt {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        padding: 0.5em;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .scl {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      padding: 0.5em;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .mainlogo {
+    padding-top: 20vh;
+  }
+
+  .about {
+    padding: 0 1.5em;
+    padding-top: 10vh;
+    padding-bottom: 3em;
+  }
+  .social {
+    padding: 0 2em;
+  }
+}
+footer {
+  background-color: $Darkgrey;
+  text-align: center;
+  color: white;
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    font-family: $poppins;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+
+  .sc_icon {
+    padding: 2em 0;
+    height: 20px;
+  }
+
+  h5 {
+    color: $Grey;
+    padding-bottom: 3em;
+    font-size: 12px;
+  }
+}

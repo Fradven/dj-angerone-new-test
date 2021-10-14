@@ -1,0 +1,30 @@
+@media screen and (max-width: 320px) {
+  .homegal {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 320px) {
+  .homegal {
+    max-width: 33.333333%;
+    flex: 0 0 33.333333%;
+    min-height: 1px;
+  }
+  .homegalbig {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+.index_galctn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homegal {
+  box-sizing: border-box;
+}
+.homegalbot {
+  box-sizing: border-box;
+  width: 100%;
+}
